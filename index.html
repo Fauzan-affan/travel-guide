@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>My Travel Guide</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark mb-3">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="form-inline search-box">
+                <input class="form-control mr-sm-4 rounded-pill" type="search" placeholder="Search destination..." aria-label="Search">
+                <input class="form-control mr-sm-4 rounded-pill" type="text" placeholder="Total Price: 0" readonly>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>My Travel Guide</h1> <br />
+
+        <div class="bd-example mb-3">
+            
+            <div class="d-flex justify-content-between" style="margin-bottom: 10px;">
+                <p class="text-muted">All Places</p>
+                <select class="dropdown">
+                    <option value="" selected>Select Country</option>
+                </select>
+            </div>
+
+            <div class="card-deck">
+
+<!--            <div class="card">
+                    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                        class="card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lawang Sewu</h5>
+                        <h6 class="card-title">landmark in Semarang, Central Java, Indonesia</h6>
+                        <p class="card-text">Lawang Sewu ("Thousand Doors") is a landmark in Semarang, Central Java,
+                            Indonesia, built as the headquarters of the Dutch East Indies Railway Company.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Total Expenses: 1250000</p>
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">See
+                            More</button>
+                        <button type="button" class="btn btn-primary">Add to Wishlist</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1553174770-99d471dea738?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasional Monument</h5>
+                        <h6 class="card-title">Merdeka Square, Central Jakarta, Indonesia</h6>
+                        <p class="card-text">It is the national monument of the Republic of Indonesia, built to
+                            commemorate the struggle for Indonesian independence.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Total Expenses: 500000</p>
+                        <button type="button" class="btn btn-dark">See More</button>
+                        <button type="button" class="btn btn-primary">Add to Wishlist</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1553174770-99d471dea738?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tangkuban Perahu</h5>
+                        <h6 class="card-title">30 km north of the city of Bandung, West Java, Indonesia</h6>
+                        <p class="card-text">Tangkuban Parahu is a stratovolcano 30 km north of the city of Bandung, the
+                            provincial capital of West Java, Indonesia.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Total Expenses: 1000000</p>
+                        <button type="button" class="btn btn-dark">See More</button>
+                        <button type="button" class="btn btn-primary">Add to Wishlist</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <div class="modal fade popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!-- <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-dark">Add to Wishlist</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                            class="card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lawang Sewu</h5>
+                            <h6 class="card-title">landmark in Semarang, Central Java, Indonesia</h6>
+                            <p class="card-text">Lawang Sewu ("Thousand Doors") is a landmark in Semarang, Central Java,
+                                Indonesia, built as the headquarters of the Dutch East Indies Railway Company.</p>
+                            <p>Lawang Sewu was designed by Cosman Citroen, from the firm of J.F. Klinkhamer and B.J.
+                                Quendag. It was designed in New Indies Style, an academically-accepted term for Dutch
+                                Rationalism in the Indies. Similar with Dutch Rationalism, the style is the result of
+                                the attempt to develop new solutions to integrate traditional precedents (classicism)
+                                with new technological possibilities.</p>
+                            <p>
+                                Construction began in 1904 with A building, which was completed in 1907. The rest of the
+                                complex was finished in 1919. It was initially used by the Nederlandsch-Indische
+                                Spoorweg Maatschappij, the first railway company in the Dutch East Indies.</p>
+                        </div>
+                        <div class="card-footer">
+                            <p>Total Expenses: 1250000</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+        <script src="./js/destination.js"></script>
+</body>
+
+</html>
